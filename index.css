@@ -1,0 +1,85 @@
+.page {
+  background: linear-gradient(318deg, rgba(2,0,36,0.7203475140056023) 4%, rgba(0,212,255,0.7679665616246498) 53%, rgba(9,9,121,1) 99%);
+  height: 100vh;
+  margin: 0;
+}
+
+.background__ellipse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background__cross {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+#gameContainer {
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #fff;
+  margin: 65px auto 25px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#statusText {
+  font-size: 28px;
+  color: #fff;
+  margin: 25px auto 45px;
+}
+
+#cellContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 306px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 32px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  border-right: 1px solid #C1C1C1;
+  border-bottom: 1px solid #C1C1C1;
+  color: transparent;
+}
+
+.cell:nth-child(3n) {
+  border-right: none;
+}
+.cell:nth-child(6) ~ .cell {
+  border-bottom: none;
+} 
+
+.cross {
+  background: url('./images/Cross\ red.svg') center / 50px 50px no-repeat;
+}
+
+.ellipse {
+  background: url('./images/Ellipse\ green.svg') center / 50px 50px no-repeat;
+}
+
+#restartBtn {
+  border: none;
+  background-color: #fff;
+  padding: 10px 25px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
